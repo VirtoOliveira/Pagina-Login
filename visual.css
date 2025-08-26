@@ -1,0 +1,102 @@
+
+
+html body{
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient( 135deg , #2563eb, #1e40af);
+    font-family: Arial, sans-serif;
+}
+
+.caixa-texto {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 1000px;
+    max-height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    overflow: hidden;
+    background-color: white;
+}
+
+.caixa {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 40px;
+    background: #fff;
+    justify-content: center;
+}
+
+.caixa h1 {
+    margin-bottom: 0 0 10px 0;
+}
+
+.textinho {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 40px;
+    background: #f9fafb;
+    text-align: center;
+}
+
+.textinho h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #111827;
+}
+
+.textinho p {
+    margin: 0;
+    font-size: 18px;
+    color: #374151;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #113176;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .caixa-texto {
+    flex-direction:column;
+     width: 95%;
+    max-height: none;
+    
+}
+
+    .caixa, .textinho {
+        padding: 20px;
+    }
+}
